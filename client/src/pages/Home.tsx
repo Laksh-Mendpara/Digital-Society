@@ -58,15 +58,18 @@ export default function Home() {
         comicPanels={[
           {
             image: frescoImage,
-            caption: "Merchant hears stories of Europe from travelers. 'He heard of cars, phones, and flying machines… but had never seen them.'",
+            caption: "In the bustling courtyard of a Shekhawati haveli, 1880s. A wealthy merchant sits cross-legged, listening intently to a British traveler. 'He spoke of horseless carriages, machines that fly like birds, and boxes that capture voices...' The merchant's eyes widen with wonder. He had never ventured beyond Rajasthan, yet these tales painted worlds he could barely imagine.",
+            narrativeTitle: "The Merchant's Wonder"
           },
           {
             image: frescoCarImage,
-            caption: "Painter imagines a Ford car → paints one driven by Krishna. 'Imagination filled the gaps of reality.'",
+            caption: "The local fresco artist receives his commission: 'Paint what the sahib described.' With no photograph, no blueprint, only words and imagination, he begins. A Ford motorcar emerges on the wall... but driven by Lord Krishna, decorated with peacock feathers. The wheels? Ornate like temple chakras. 'What I cannot see, I must dream.'",
+            narrativeTitle: "Imagination Meets Reality"
           },
           {
             image: frescoAngelImage,
-            caption: "British soldier painted with angel wings. 'Satire and fantasy blended into everyday walls.'",
+            caption: "On another wall: a British soldier rendered with magnificent angel wings, floating above the fort. The artist grins mischievously. 'If they can conquer our land, in my art, I make them guardians of heaven.' Satire masked as devotion. The walls became silent protests, fantasy kingdoms where locals controlled the narrative.",
+            narrativeTitle: "Art as Rebellion"
           },
         ]}
         history="Between 1850–1930, Shekhawati merchants built havelis showcasing their wealth. They instructed fresco painters to depict modern inventions, often based on hearsay. Result: world's largest collection of anachronistic murals."
@@ -89,15 +92,18 @@ export default function Home() {
         comicPanels={[
           {
             image: stepwellImage,
-            caption: "Women stand at stepwell edge at dusk. 'Water was judged not by sight, but by sound.'",
+            caption: "Dusk settles over Bundi's Raniji ki Baori, 1650. Women gather at the ornate stepwell's edge, not to draw water, but to listen. An elder teaches: 'Close your eyes, child. In the desert, your ears must see what your eyes cannot.' Here, water quality was measured by acoustics—an ancient science passed through generations.",
+            narrativeTitle: "The Science of Sound"
           },
           {
             image: bundiEchoImage,
-            caption: "Girl throws a bowl; echo rings. 'A deep echo meant sweet rainwater; a flat one meant danger.'",
+            caption: "A young girl drops a brass bowl into the depths. It tumbles down 100 feet of carved steps. The echo rises—clear, resonant, musical. 'Deep and pure, like temple bells. This water is blessed by monsoon rains.' A different echo might warn of stagnant water or mineral deposits. Each stepwell had its own acoustic signature.",
+            narrativeTitle: "Reading the Echo"
           },
           {
             image: bundiStepsImage,
-            caption: "Torchlight reveals layers of steps like an infinite maze.",
+            caption: "As torches are lit for the evening ritual, the stepwell transforms. Nine stories of symmetrical steps descend into darkness, each level carved with deities and celestial dancers. 'We descended not just for water, but into geometry itself—a meditation in stone.' The architecture was both functional and spiritual, a stairway between earth and underworld.",
+            narrativeTitle: "Infinite Descent"
           },
         ]}
         history="Bundi's 50+ stepwells were marvels of water engineering (13th–17th century). Acoustics helped determine water quality & monsoon prediction."
@@ -119,15 +125,18 @@ export default function Home() {
         comicPanels={[
           {
             image: jodhpurSingerImage,
-            caption: "A Manganiyar sings to a newborn child. 'We remember 30 generations of your family.'",
+            caption: "Jodhpur, 18th century. A Manganiyar musician sits cross-legged before a Rajput noble's newborn son. He tunes his kamaycha and begins: 'Listen well, for I shall sing your lineage back 30 generations.' His voice weaves through centuries—each ancestor's name, their deeds, their marriages. The Rajputs had no written records; these singers were living libraries, their songs the only proof of royal blood.",
+            narrativeTitle: "Songs as Memory"
           },
           {
             image: jodhpurImage,
-            caption: "Rajput noble listens. 'Their songs are moving genealogies.'",
+            caption: "The noble listens, tears in his eyes. 'My grandfather's grandfather's voice lives in your song.' Manganiyar families served specific Rajput clans for centuries, memorizing thousands of genealogical verses. They were historians, poets, and proof of legitimacy. A disputed heir might call a Manganiyar to court to sing their ancestry. Truth resided not in paper, but in melody.",
+            narrativeTitle: "Living Archives"
           },
           {
             image: jodhpurCityImage,
-            caption: "The blue city spreads behind them.",
+            caption: "Behind them, the blue city cascades down the hill. Houses painted in indigo—originally by Brahmins to signify caste, later adopted citywide to reflect heat and repel insects. Each blue wall holds stories. Each narrow lane echoes with ravanhatta strings. Jodhpur became a city where memory lived in music and walls breathed color.",
+            narrativeTitle: "City of Blue Memory"
           },
         ]}
         history="Manganiyars maintained oral genealogical records for Rajputs. Blue color believed to cool buildings & reflect caste-based settlement patterns."
@@ -149,15 +158,18 @@ export default function Home() {
         comicPanels={[
           {
             image: fortCurseImage,
-            caption: "Hermit curses the land.",
+            caption: "1459 AD. Rao Jodha surveys the rocky hilltop, envisioning his impregnable fortress. But a hermit named Cheeria Nathji meditates in a cave on this very spot. 'Leave this sacred ground!' he warns. When ignored, the hermit's eyes blaze with fury: 'Your fort will stand eternal, but this land shall forever thirst for water.' A curse echoes across the cliffs.",
+            narrativeTitle: "The Hermit's Curse"
           },
           {
             image: fortSacrificeImage,
-            caption: "A man offers his life to lift the curse.",
+            caption: "The curse begins to manifest—wells run dry, construction workers collapse from thirst. Desperation grips Rao Jodha. A man named Rajaram Meghwal steps forward: 'Bury me alive in the foundation. Let my sacrifice appease the gods and lift this curse.' The king hesitates, but Rajaram insists. 'My family will be honored forever.' A selfless act to save a kingdom.",
+            narrativeTitle: "The Ultimate Sacrifice"
           },
           {
             image: fortImage,
-            caption: "Foundation stone laid over his sacrifice.",
+            caption: "The foundation stone descends over Rajaram's living burial. His family is granted land and eternal royal protection. The fort rises—400 feet of sandstone might, with walls 69 feet thick. Never conquered by siege or assault. The sacrifice worked. Even today, his descendants live in Raj Bagh, a garden within the fort, guardians of memory.",
+            narrativeTitle: "Fort of Eternal Watch"
           },
         ]}
         history="Built 1459 by Rao Jodha. One of the best-preserved Rajput forts. Never conquered due to strategic height & walls."
@@ -178,15 +190,18 @@ export default function Home() {
         comicPanels={[
           {
             image: udaipurMirrorImage,
-            caption: "Queen uses mirror to send signals across the lake.",
+            caption: "Lake Pichola, during a Mughal siege, 1600s. The Mewar queen stands at her palace window, holding a polished bronze mirror. She angles it toward the sun—one flash, two flashes, pause, three rapid flashes. Across the water, two miles away, another palace catches the signal. No messenger could cross the siege lines. But light travels unimpeded. A code older than morse, simpler than semaphore.",
+            narrativeTitle: "Light as Language"
           },
           {
             image: udaipurSignalImage,
-            caption: "Palace guard receives coded flash.",
+            caption: "The guard at Jag Mandir receives the flash. He decodes: 'Northeast gate vulnerable at dawn. Prepare ambush.' He signals confirmation—a different rhythm. The mirrors continue their conversation as soldiers prepare below. During the siege, these light signals coordinated attacks, warned of breaches, and maintained royal communication. The Mughals never learned to read the flashes.",
+            narrativeTitle: "Secret in Sunlight"
           },
           {
             image: udaipurImage,
-            caption: "Entire palace lights up.",
+            caption: "When victory came, the City Palace illuminated—thousands of oil lamps reflected in the lake, doubling the light. Mirror work inside the palace halls amplified every flame into infinity. Udaipur's architecture was designed around light: reflection, refraction, multiplication. Even in siege, light remained their unbreakable weapon.",
+            narrativeTitle: "Palace of Infinite Light"
           },
         ]}
         history="Mewar queens used mirror signaling systems during sieges. Udaipur founded by Maharana Udai Singh in 1559. Known for architectural water management."
@@ -209,15 +224,18 @@ export default function Home() {
         comicPanels={[
           {
             image: barmerKingImage,
-            caption: "King bans poets from mocking him.",
+            caption: "Barmer, 16th century. The local raja, humiliated by satirical poets at his court, slams his fist: 'Anyone who mocks me shall lose their tongue!' Fear spreads. The poets go silent. The musicians play only praise songs. The marketplace, once vibrant with wit and debate, becomes suffocatingly polite. But the people's need for truth doesn't disappear—it merely finds a new voice.",
+            narrativeTitle: "Silencing the Voice"
           },
           {
             image: puppetImage,
-            caption: "Puppeteers create a puppet that imitates the king.",
+            caption: "In secret, the Bhatt puppeteer carves a wooden marionette with exaggerated features—a rotund belly, jeweled turban, oversized mustache. He dresses it in royal silk. 'This is not the king,' he announces with a wink to his family. 'This is merely... a character.' The puppet cannot be arrested. The puppet cannot lose its tongue. Art finds its loophole.",
+            narrativeTitle: "Wood Speaks Truth"
           },
           {
             image: barmerPuppetImage,
-            caption: "Audience laughs as puppet says truths no human could.",
+            caption: "Under the desert moon, a crowd gathers for the puppet show. The 'king' puppet proclaims absurd decrees: 'I declare clouds illegal! Tax the sand!' The audience roars with laughter. Children point. Adults nod knowingly. The real king, hearing of this, sends guards—but what can they do? Arrest a puppet? Kathputli became Rajasthan's uncensored press, truth wrapped in entertainment.",
+            narrativeTitle: "Laughter as Resistance"
           },
         ]}
         history="Kathputli puppetry dates back 1,000 years. Used for teaching, satire, and political critique."
@@ -240,15 +258,18 @@ export default function Home() {
         comicPanels={[
           {
             image: jaisalmerNavigationImage,
-            caption: "Caravan leader shows children how to read dune wind patterns.",
+            caption: "The Thar Desert, 12th century. A caravan leader crouches beside two young boys at dawn. 'See how the wind shapes the dune? When ripples flow northeast, we travel west.' He teaches them to read sand: sharp crests mean harsh wind, smooth slopes mean calm. Each dune is a compass, each grain of sand a story. The Silk Route depended not on roads, but on those who could read the desert's breath.",
+            narrativeTitle: "Reading the Dunes"
           },
           {
             image: jaisalmerMirageImage,
-            caption: "They avoid a mirage.",
+            caption: "By midday, shimmering water appears on the horizon. The younger boy runs forward, desperate for drink. The leader grabs his shoulder: 'Stop! That water lies. See how it moves with your eyes, not your feet?' He teaches the mirage test—throw sand ahead; if the 'water' remains, it's illusion. Caravans that chased mirages died. Those who learned to see truth survived. Desert wisdom was survival science.",
+            narrativeTitle: "Illusions and Truth"
           },
           {
             image: jaisalmerImage,
-            caption: "Golden fort rises through dust.",
+            caption: "Through heat and dust, the golden fort of Jaisalmer materializes—not a mirage, but real stone glowing like honey in sunset. Built from yellow sandstone that camouflages into desert, visible only at certain angles. A fortress designed to be both sentinel and secret. Inside, merchants from Persia, Arabia, and Central Asia trade silk, spices, and knowledge. The desert's harshness created the sharpest traders.",
+            narrativeTitle: "Fortress of Gold"
           },
         ]}
         history="Important Silk Route link. Caravans traded with Persia, Arabia, and Central Asia. Fort built in 1156 AD."
@@ -269,15 +290,18 @@ export default function Home() {
         comicPanels={[
           {
             image: pushkarLotusImage,
-            caption: "Brahma drops lotus → lake forms.",
+            caption: "In the beginning, Lord Brahma—creator of the universe—searched for the perfect place to perform a yajna. He held a lotus flower, let it fall from the sky. Where each petal touched earth, water sprang forth. Pushkar Lake materialized in the Aravalli hills, a miracle in the desert. The lotus became sacred. The water, eternal. Mythology and geography merged into pilgrimage.",
+            narrativeTitle: "The Lotus Falls"
           },
           {
             image: pushkarPilgrimsImage,
-            caption: "Pilgrims gather.",
+            caption: "Kartik Purnima, the full moon night. Hundreds of thousands of pilgrims descend upon Pushkar's 52 ghats. They believe bathing here on this night absolves all sins. The lake glows with floating diyas—tiny oil lamps on leaf boats. Brahmins chant. Bells ring. The air thickens with incense and devotion. For centuries, this desert lake has been Hinduism's most sacred bathing site after the Ganges.",
+            narrativeTitle: "Night of Redemption"
           },
           {
             image: pushkarPilgrimsImage,
-            caption: "Brahma temple stands tall.",
+            caption: "The Brahma Temple rises white and red, crowned with a swan—Brahma's vehicle. Why only here? Legend says Brahma's wife Savitri cursed him: 'You shall be worshipped nowhere but Pushkar.' So this single temple became the universe's creator's only earthly throne. Pilgrims circle it, touch its walls, pray to the architect of existence. Meanwhile, camels trade in the fair outside—sacred and commerce intertwined.",
+            narrativeTitle: "The Only Temple"
           },
         ]}
         history="Only dedicated Brahma temple in India. Dates to 14th century (rebuilt multiple times)."
@@ -297,15 +321,18 @@ export default function Home() {
         comicPanels={[
           {
             image: chittorgarhSoldiersImage,
-            caption: "Soldiers prepare for siege.",
+            caption: "Chittorgarh Fort, 1303. Alauddin Khilji's army surrounds the massive fort—20,000 troops against 8,000 defenders. Inside, Rajput soldiers don saffron robes, the color of sacrifice. 'Today we perform Saka,' declares their commander. Saka—the ritual of fighting to death when victory is impossible. They sharpen swords, embrace families one last time. Honor demands they never surrender.",
+            narrativeTitle: "The Siege Begins"
           },
           {
             image: chittorgarhWomenImage,
-            caption: "Women gather together, determined.",
+            caption: "While men prepare for Saka, women gather in the underground chambers. Queen Padmini addresses them: 'We shall not be prizes for the enemy.' They perform Jauhar—mass self-immolation to protect honor. 13,000 women and children descend into the pyre chamber. Flames rise as drums beat. Outside, seeing the smoke, the Rajput men charge into their final battle. Death chosen, not imposed.",
+            narrativeTitle: "Jauhar's Fire"
           },
           {
             image: chittorgarhSoldiersImage,
-            caption: "Flame rises — symbol of sacrifice.",
+            caption: "The fort falls. Khilji enters to find only ashes and empty halls. No prisoners. No spoils. Only sacrifice. Chittorgarh would face this twice more—in 1535 and 1567. Each time: Jauhar, then Saka. The fort became a symbol: Rajputs valued honor above life. Today, the Jauhar Kund (sacrifice pit) remains—a monument to defiant choice in the face of defeat.",
+            narrativeTitle: "Monument to Honor"
           },
         ]}
         history="Faced three major sieges: Alauddin Khilji, Bahadur Shah, Akbar. Symbol of Rajput honor & resistance."
@@ -325,15 +352,18 @@ export default function Home() {
         comicPanels={[
           {
             image: ranakpurTestingImage,
-            caption: "Two artisans tap pillars.",
+            caption: "15th century, Ranakpur. Two master sculptors work in the marble quarry. One taps a half-carved pillar with a metal rod. It rings—a pure, bell-like note. 'This one,' he declares. His companion taps another; it thuds dully. 'Flawed marble, internal fractures.' They're selecting stone not by sight, but by sound. The Jain temple they're building demands perfection in every pillar—1,444 of them.",
+            narrativeTitle: "Testing the Stone"
           },
           {
             image: ranakpurTestingImage,
-            caption: "Pillar emits a clear note.",
+            caption: "Each pillar must sing. The architect Depaka's vision: a forest of carved stone where every column resonates at a unique frequency. Tap one pillar, and its neighbors hum in sympathetic vibration. The entire temple would be a musical instrument. Artisans spent decades hand-carving each pillar differently—no two alike. Mathematics, sculpture, and acoustics merged into prayer.",
+            narrativeTitle: "Pillars That Sing"
           },
           {
             image: ranakpurPillarsImage,
-            caption: "Forest of 1,444 pillars appears.",
+            caption: "Inside the completed temple, 1,444 pillars rise like a white marble forest. Each intricately carved with dancers, deities, and geometric patterns. Light filters through, creating ever-shifting shadow plays. Stand in the center, clap your hands—the echo takes 7 seconds to fade, bouncing between pillars. The Jains built this as a meditation on infinity: infinite detail, infinite reflection, infinite patience.",
+            narrativeTitle: "The Infinite Forest"
           },
         ]}
         history="Built in 15th century by Dharna Shah. Famous for 1,444 unique pillars — none identical. Some pillars are acoustically tuned."
@@ -353,15 +383,18 @@ export default function Home() {
         comicPanels={[
           {
             image: ruralCookingImage,
-            caption: "Grandma teaches child to knead dough.",
+            caption: "In a remote dhani (hamlet), 50 km from any town, a grandmother teaches her granddaughter the art of bajra roti. 'Feel the dough—too wet and it tears, too dry and it cracks.' Her hands, weathered by decades of desert sun, shape the millet flour expertly. No measuring cups, no recipes written down. Knowledge passed through touch, repetition, survival. In these villages, women are unacknowledged engineers of nutrition.",
+            narrativeTitle: "Hands That Know"
           },
           {
             image: ruralFireImage,
-            caption: "Chulha fire glows.",
+            caption: "The clay chulha (stove) glows orange as cow dung cakes burn—sustainable fuel in a treeless land. The roti puffs on the flame, charring perfectly. 'We waste nothing,' Grandmother explains. Dung becomes fuel. Ash becomes fertilizer. Every drop of water stored in underground taankas is treasured. Desert life demands a circular economy; waste is a luxury these villages can't afford.",
+            narrativeTitle: "Circle of Survival"
           },
           {
             image: ruralNightImage,
-            caption: "Desert night sky blankets the home.",
+            caption: "Night falls. The dhani—just four mud homes clustered together—seems impossibly small under the vast Milky Way. No electricity, no internet, yet here families have lived for 400 years. Children learn constellations for navigation. Elders tell stories that preserve history. The desert night sky, unpolluted, reveals the universe. In the remotest corners of Rajasthan, ancient wisdom persists, unhurried by modernity.",
+            narrativeTitle: "Under Infinite Stars"
           },
         ]}
         history="Remote Rajasthan villages preserved age-old water conservation: Taanka (underground tank), Johad (small check dams). Architecture was climate-responsive."

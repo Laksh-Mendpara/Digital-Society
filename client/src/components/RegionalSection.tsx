@@ -6,6 +6,7 @@ import { Card } from "@/components/ui/card";
 interface ComicPanelData {
   image?: string;
   caption: string;
+  narrativeTitle?: string;
 }
 
 interface CulturalImage {
@@ -111,12 +112,22 @@ export default function RegionalSection({
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
           {comicPanels.map((panel, index) => (
-            <ComicPanel
+            <div
               key={index}
-              image={panel.image}
-              caption={panel.caption}
-              delay={index * 150}
-            />
+              className={`${
+                index === 1 ? 'md:translate-y-8' : ''
+              } ${
+                index === 2 ? 'md:translate-y-4' : ''
+              }`}
+            >
+              <ComicPanel
+                image={panel.image}
+                caption={panel.caption}
+                delay={index * 150}
+                panelNumber={index + 1}
+                narrativeTitle={`Chapter ${index + 1}`}
+              />
+            </div>
           ))}
         </div>
 
@@ -161,18 +172,21 @@ export default function RegionalSection({
               {culturalImages.map((item, index) => (
                 <Card
                   key={index}
-                  className="overflow-hidden hover-elevate"
+                  className={`overflow-hidden hover-elevate hover:shadow-2xl transition-all duration-500 hover:-translate-y-3 cursor-pointer group ${
+                    index % 2 === 0 ? 'md:translate-y-0' : 'md:translate-y-4'
+                  }`}
                   data-testid={`card-culture-${index}`}
                 >
-                  <div className="aspect-square bg-gradient-to-br from-[#F4C2C2] to-[#E89BA3] overflow-hidden">
+                  <div className="aspect-square bg-gradient-to-br from-[#F4C2C2] to-[#E89BA3] overflow-hidden relative">
                     <img
                       src={item.image}
                       alt={item.caption}
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                     />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                   </div>
-                  <div className="p-4">
-                    <p className="font-sans text-sm text-card-foreground leading-snug">
+                  <div className="p-4 bg-card">
+                    <p className="font-sans text-sm text-card-foreground leading-snug group-hover:text-primary transition-colors">
                       {item.caption}
                     </p>
                   </div>
