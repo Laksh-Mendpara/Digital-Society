@@ -4,23 +4,46 @@ import { Button } from "@/components/ui/button";
 
 export default function BackgroundMusic() {
   const [isMuted, setIsMuted] = useState(false);
-  const [isPlaying, setIsPlaying] = useState(false);
+  const [isPlaying, setIsPlaying] = useState(true);
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
   useEffect(() => {
-    // Create audio element
-    audioRef.current = new Audio("/ghoomar.mp3");
-    audioRef.current.loop = true;
-    audioRef.current.volume = 0.3; // Set volume to 30%
+    // Create audio element with autoplay
+    const audio = new Audio("/ghoomar.mp3");
+    audio.loop = true;
+    audio.volume = 0.3; // Set volume to 30%
+    audio.autoplay = true;
+    audio.muted = false;
+    audioRef.current = audio;
 
-    // Try to autoplay (will work after user interaction)
+    // Start playing immediately
     const playAudio = async () => {
       try {
-        await audioRef.current?.play();
+        // Force play with a promise
+        await audio.play();
         setIsPlaying(true);
       } catch (error) {
-        // Autoplay blocked - will play after user interaction
-        console.log("Autoplay blocked. Click to play music.");
+        // If autoplay is blocked, keep trying on interactions
+        console.log("Autoplay blocked by browser, will retry on user interaction");
+        
+        const retryPlay = async () => {
+          try {
+            await audio.play();
+            setIsPlaying(true);
+            // Remove all listeners after successful play
+            document.removeEventListener("click", retryPlay);
+            document.removeEventListener("scroll", retryPlay);
+            document.removeEventListener("keydown", retryPlay);
+            document.removeEventListener("touchstart", retryPlay);
+          } catch (e) {
+            console.log("Retry failed:", e);
+          }
+        };
+        
+        document.addEventListener("click", retryPlay, { once: true });
+        document.addEventListener("scroll", retryPlay, { once: true });
+        document.addEventListener("keydown", retryPlay, { once: true });
+        document.addEventListener("touchstart", retryPlay, { once: true });
       }
     };
 
