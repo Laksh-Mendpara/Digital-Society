@@ -8,6 +8,11 @@ interface ComicPanelData {
   caption: string;
 }
 
+interface CulturalImage {
+  image: string;
+  caption: string;
+}
+
 interface RegionalSectionProps {
   id: string;
   title: string;
@@ -18,6 +23,7 @@ interface RegionalSectionProps {
   comicPanels: ComicPanelData[];
   history: string;
   culture: string;
+  culturalImages?: CulturalImage[];
   animationClass?: string;
 }
 
@@ -31,6 +37,7 @@ export default function RegionalSection({
   comicPanels,
   history,
   culture,
+  culturalImages,
   animationClass,
 }: RegionalSectionProps) {
   const [isVisible, setIsVisible] = useState(false);
@@ -113,7 +120,7 @@ export default function RegionalSection({
           ))}
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 gap-8 mb-16">
           <Card
             className={`p-8 bg-white/80 dark:bg-card/80 backdrop-blur-sm transition-all duration-700 delay-300 ${
               isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
@@ -140,6 +147,40 @@ export default function RegionalSection({
             </div>
           </Card>
         </div>
+
+        {culturalImages && culturalImages.length > 0 && (
+          <div
+            className={`transition-all duration-700 delay-500 ${
+              isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+            }`}
+          >
+            <h3 className="font-display text-3xl font-bold mb-8 text-foreground uppercase tracking-wide">
+              Local Culture & Traditions
+            </h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {culturalImages.map((item, index) => (
+                <Card
+                  key={index}
+                  className="overflow-hidden hover-elevate"
+                  data-testid={`card-culture-${index}`}
+                >
+                  <div className="aspect-square bg-gradient-to-br from-[#F4C2C2] to-[#E89BA3] overflow-hidden">
+                    <img
+                      src={item.image}
+                      alt={item.caption}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <div className="p-4">
+                    <p className="font-sans text-sm text-card-foreground leading-snug">
+                      {item.caption}
+                    </p>
+                  </div>
+                </Card>
+              ))}
+            </div>
+          </div>
+        )}
       </div>
     </section>
   );
