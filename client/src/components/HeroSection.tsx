@@ -1,11 +1,6 @@
-import { Volume2 } from "lucide-react";
-import { Button } from "@/components/ui/button";
 import mandalaImage from "@assets/generated_images/Rajasthani_mandala_desert_motif_ad5035d7.png";
 
 export default function HeroSection() {
-  const handlePlayAudio = () => {
-    console.log("Playing sarangi audio");
-  };
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-b from-[#EDD5B3] via-[#F4C2C2] to-[#D4846A]">
@@ -44,18 +39,7 @@ export default function HeroSection() {
           story.
         </p>
 
-        <Button
-          onClick={handlePlayAudio}
-          variant="outline"
-          size="lg"
-          className="bg-white/50 backdrop-blur-sm border-[#D4846A] text-[#2E3A8C] hover:bg-white/70"
-          data-testid="button-play-intro-audio"
-        >
-          <Volume2 className="mr-2 h-5 w-5" />
-          Play Traditional Music
-        </Button>
-
-        <div className="mt-16 text-[#4A5899] font-serif text-sm animate-fade-in">
+        <div className="mt-8 text-[#4A5899] font-serif text-sm animate-fade-in">
           Scroll to begin your journey ↓
         </div>
       </div>

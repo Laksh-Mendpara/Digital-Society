@@ -54,7 +54,6 @@ export default function Home() {
         subtitle="The Surreal Open-Air Art Gallery"
         backgroundColor="#F4C2C2"
         backgroundImage={frescoImage}
-        audioLabel="Sarangi & Bazaar"
         comicPanels={[
           {
             image: frescoImage,
@@ -88,7 +87,6 @@ export default function Home() {
         subtitle="The City Where Water Spoke"
         backgroundColor="#9BC4E2"
         backgroundImage={stepwellImage}
-        audioLabel="Water Echoes"
         comicPanels={[
           {
             image: stepwellImage,
@@ -121,7 +119,6 @@ export default function Home() {
         subtitle="The Blue City of Songs and Memory"
         backgroundColor="#5B7FA8"
         backgroundImage={jodhpurImage}
-        audioLabel="Ravanhatta"
         comicPanels={[
           {
             image: jodhpurSingerImage,
@@ -154,7 +151,6 @@ export default function Home() {
         subtitle="The Fort That Never Fell"
         backgroundColor="#C96449"
         backgroundImage={fortImage}
-        audioLabel="Cannon Echo"
         comicPanels={[
           {
             image: fortCurseImage,
@@ -186,7 +182,6 @@ export default function Home() {
         subtitle="City of Mirrors and Lakes"
         backgroundColor="#B8D4E8"
         backgroundImage={udaipurImage}
-        audioLabel="Lake Waves"
         comicPanels={[
           {
             image: udaipurMirrorImage,
@@ -220,7 +215,6 @@ export default function Home() {
         subtitle="The Puppets That Fought Kings"
         backgroundColor="#EDD5B3"
         backgroundImage={puppetImage}
-        audioLabel="Puppet Theatre"
         comicPanels={[
           {
             image: barmerKingImage,
@@ -254,7 +248,6 @@ export default function Home() {
         subtitle="The Desert Mirage City"
         backgroundColor="#D4AF6A"
         backgroundImage={jaisalmerImage}
-        audioLabel="Desert Wind"
         comicPanels={[
           {
             image: jaisalmerNavigationImage,
@@ -286,7 +279,6 @@ export default function Home() {
         title="Pushkar"
         subtitle="The Lotus of Creation"
         backgroundColor="#F4C2C2"
-        audioLabel="Temple Bells"
         comicPanels={[
           {
             image: pushkarLotusImage,
@@ -317,7 +309,6 @@ export default function Home() {
         title="Chittorgarh"
         subtitle="The Flame of Courage"
         backgroundColor="#D4846A"
-        audioLabel="War Drums"
         comicPanels={[
           {
             image: chittorgarhSoldiersImage,
@@ -348,7 +339,6 @@ export default function Home() {
         title="Ranakpur"
         subtitle="The Marble Symphony"
         backgroundColor="#E8E8E8"
-        audioLabel="Marble Notes"
         comicPanels={[
           {
             image: ranakpurTestingImage,
@@ -379,7 +369,6 @@ export default function Home() {
         title="Rural Dhani"
         subtitle="Heart of the Desert"
         backgroundColor="#C9A876"
-        audioLabel="Village Sounds"
         comicPanels={[
           {
             image: ruralCookingImage,

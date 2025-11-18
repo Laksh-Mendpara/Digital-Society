@@ -1,6 +1,5 @@
 import { useEffect, useRef, useState } from "react";
 import ComicPanel from "./ComicPanel";
-import AudioToggle from "./AudioToggle";
 import { Card } from "@/components/ui/card";
 
 interface ComicPanelData {
@@ -20,7 +19,6 @@ interface RegionalSectionProps {
   subtitle: string;
   backgroundColor: string;
   backgroundImage?: string;
-  audioLabel: string;
   comicPanels: ComicPanelData[];
   history: string;
   culture: string;
@@ -34,7 +32,6 @@ export default function RegionalSection({
   subtitle,
   backgroundColor,
   backgroundImage,
-  audioLabel,
   comicPanels,
   history,
   culture,
@@ -81,7 +78,7 @@ export default function RegionalSection({
       )}
 
       <div className="relative z-10 max-w-7xl mx-auto">
-        <div className="flex justify-between items-start mb-12">
+        <div className="mb-12">
           <div
             className={`transition-all duration-700 ${
               isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-8"
@@ -99,14 +96,6 @@ export default function RegionalSection({
             <p className="font-serif text-2xl italic opacity-80" data-testid={`text-${id}-subtitle`}>
               {subtitle}
             </p>
-          </div>
-
-          <div
-            className={`transition-all duration-700 delay-200 ${
-              isVisible ? "opacity-100" : "opacity-0"
-            }`}
-          >
-            <AudioToggle label={audioLabel} regionName={title} />
           </div>
         </div>
 
